@@ -22,6 +22,14 @@ function setup() {
   console.log(longitudineMassima);
 }
 
+let hovered = null;
+
+function mousePressed(){
+  // crea url da aprire
+  let url= "particolare.html?country=" + hovered.country;
+  window.location.href = url;
+}
+
 function draw() {
   background(10);
 
